@@ -3,7 +3,7 @@ class Solution{
     // arr: input array
     // n: size of array
     //Function to find the sum of contiguous subarray with maximum sum.
-    long long maxSubarraySum(int a[], int n){
+    long long maxSubarraySum(int a[], int n){ 
         
         int currentSum = 0;
         int maxSum = INT_MIN;
