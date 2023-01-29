@@ -16,8 +16,7 @@ class Solution{
             if(currentSum < 0){
                 currentSum = 0;
             }
-            
-        }
+       }
         
         return maxSum;
         
