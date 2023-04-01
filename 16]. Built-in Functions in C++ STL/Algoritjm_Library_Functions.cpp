@@ -92,16 +92,12 @@ int main() {
   cout<<"Occurrence of 8 in array : " << count(arr, arr+n, 8) << endl;
 
   cout<<endl;
-  //For calculating the occurrence of a no. in Vector
    find(v.begin(), v.end(), 9); 
-  //For calculating the occurrence of a no. in Array
    find(arr, arr+n, 8);
   
 
   cout<<endl;
-  //For calculating the occurrence of a no. in Vector
   lower_bound(v.begin(), v.end(), 9); 
-  //For calculating the occurrence of a no. in Array
   upper_bound(arr, arr+n, 8);
   
   return 0;
