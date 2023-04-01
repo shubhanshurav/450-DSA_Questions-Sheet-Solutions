@@ -92,13 +92,19 @@ int main() {
   cout<<"Occurrence of 8 in array : " << count(arr, arr+n, 8) << endl;
 
   cout<<endl;
-   find(v.begin(), v.end(), 9); 
-   find(arr, arr+n, 8);
-  
+  find(v.begin(), v.end(), 9) != v.end() ? cout<<"Element found" <<endl : cout << "Element not found" <<endl; 
+  find(arr, arr+n, 8) != arr+n ? cout<<"Element found" << endl : cout << "Element not found" << endl;   
 
   cout<<endl;
-  lower_bound(v.begin(), v.end(), 9); 
-  upper_bound(arr, arr+n, 8);
+  auto lw = lower_bound(v.begin(), v.end(), 9); 
+  cout <<"Lower bound is at position in vector : " <<  lw - v.begin();
+  auto uw = upper_bound(v.begin(), v.end(), 9); 
+  cout <<"Upper bound is at position int vector : " <<  uw - v.begin() << endl;
+
+  auto lwArr = lower_bound(arr, arr+n, 8);
+  cout <<"Lower bound is at position in array : " << lwArr - arr << endl;
+  auto uwArr = upper_bound(arr, arr+n, 8);
+  cout <<"Upper bound is at position in array : " << uwArr - arr << endl;
   
   return 0;
   
