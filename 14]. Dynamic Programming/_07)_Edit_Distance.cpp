@@ -9,7 +9,7 @@
 
     Output:
         1
-*/
+*/  
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -32,7 +32,6 @@ int editDistance(string &s, string &t) {
     memset(dp,-1,sizeof(dp));
     return solve(s,t,0,0);
 }
-
 
 int main(){
     string s,t;
